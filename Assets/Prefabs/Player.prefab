@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcce7025519d6834b8df39698386e46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponPrefab: {fileID: 0}
+  weapon: {fileID: 0}
   Offset: {x: 0, y: 0, z: 0}
   Draw: 0
 --- !u!1 &61476328784795964

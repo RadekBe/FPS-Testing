@@ -19,7 +19,7 @@ public abstract class Weapon : Item
         switch (FireType)
         {
             case FireTypes.Projectile:
-                FT = new ProjectileBasedFire (ProjectileForce,Ammo);
+                FT = new ProjectileBasedFire (ProjectileForce, Ammo);
                 break;
             case FireTypes.Raycast:
                 FT = new RaycastBasedFire (Ammo);
@@ -67,6 +67,11 @@ public abstract class Weapon : Item
     public virtual void ADS()
     {
         throw new NotImplementedException ();
+    }
+
+    private void Start()
+    {
+        Initialize ();
     }
 
 }

@@ -997,7 +997,7 @@ PrefabInstance:
     - target: {fileID: 61476328784795905, guid: aa39bc277e0bc6c4e901f4e948d1841f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.052
       objectReference: {fileID: 0}
     - target: {fileID: 61476328784795905, guid: aa39bc277e0bc6c4e901f4e948d1841f,
         type: 3}
@@ -1059,7 +1059,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2099001401, guid: aa39bc277e0bc6c4e901f4e948d1841f, type: 3}
       propertyPath: Draw
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61476328784795966, guid: aa39bc277e0bc6c4e901f4e948d1841f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa39bc277e0bc6c4e901f4e948d1841f, type: 3}

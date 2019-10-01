@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class CameraControls : MonoBehaviour
 {
-    private static CameraControls _instance { get; }
-
     public bool visibleCursor;
-    public static Camera Cam;
+    public Camera Cam;
     public float SensX,SensY;
    
     private float mX, mY,parentRotX;
@@ -31,11 +29,11 @@ public class CameraControls : MonoBehaviour
         //mX = Mathf.Clamp (mX, -180f, 180f);
 
         //Parent rotations
-        this.transform.eulerAngles = new Vector3 (0f, mX, 0f);
-        parentRotX = this.transform.eulerAngles.y;
+        transform.eulerAngles = new Vector3 (0f, mX, 0f);
+        parentRotX = transform.eulerAngles.y;
 
         //Camera only rotations
-        this.transform.eulerAngles = new Vector3(mY, parentRotX, 0f); 
+        Cam.transform.eulerAngles = new Vector3(mY, parentRotX, 0f); 
 
     }
 }

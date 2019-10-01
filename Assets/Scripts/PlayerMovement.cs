@@ -112,6 +112,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        //transform.rotation = new Quaternion (0, 0, 0, 0);
+
         targetVel = transform.TransformDirection (targetVel);
         Vector3 velChange = targetVel - rb.velocity;
 

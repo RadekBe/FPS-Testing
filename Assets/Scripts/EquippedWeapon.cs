@@ -31,7 +31,7 @@ public class EquippedWeapon : MonoBehaviour
 
     void Update()
     {
-        UpdateRotation ();
+        //UpdateRotation ();
 
         if (Draw && !drawn)
             DrawWeapon ();
@@ -41,7 +41,7 @@ public class EquippedWeapon : MonoBehaviour
 
     private void UpdateRotation()
     {
-        wepInstance.transform.rotation = CameraControls.Cam.transform.rotation;
+        //wepInstance.transform.rotation = CameraControls.Cam.transform.rotation;
     }
 
     private void HideWeapon()
