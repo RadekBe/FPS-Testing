@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class RaycastBasedFire : MonoBehaviour, IFireType
+public class RaycastBasedFire : ScriptableObject, IFireType
 {
     public float Range;
 
@@ -29,4 +29,6 @@ public class RaycastBasedFire : MonoBehaviour, IFireType
         //TODO: Implement hit checking and damage apply.
         throw new NotImplementedException ();
     }
+
+
 }

@@ -1059,7 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2099001401, guid: aa39bc277e0bc6c4e901f4e948d1841f, type: 3}
       propertyPath: Draw
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61476328784795966, guid: aa39bc277e0bc6c4e901f4e948d1841f,
         type: 3}

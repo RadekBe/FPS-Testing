@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-/*
- * 
- * OBSOLETE
- * 
- */
+[Obsolete]
 
 public interface IWeapon
 {

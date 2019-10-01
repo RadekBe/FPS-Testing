@@ -16,13 +16,14 @@ public abstract class Weapon : Item
 
     public void Initialize()
     {
+        ShootOrigin = transform;
         switch (FireType)
         {
             case FireTypes.Projectile:
-                FT = new ProjectileBasedFire (ProjectileForce, Ammo);
+                FT = ScriptableObject.CreateInstance<ProjectileBasedFire>();
                 break;
             case FireTypes.Raycast:
-                FT = new RaycastBasedFire (Ammo);
+                FT = ScriptableObject.CreateInstance<RaycastBasedFire>();
                 break;
             default:
                 Debug.LogError ("IFireType injection error");

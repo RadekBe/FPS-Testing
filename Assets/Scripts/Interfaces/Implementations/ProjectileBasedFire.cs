@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-class ProjectileBasedFire : MonoBehaviour, IFireType
+class ProjectileBasedFire : ScriptableObject, IFireType
 {
     public Ammunition Projectile;
     public float Force;
